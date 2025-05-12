@@ -22,3 +22,7 @@ Project Under Development
 - Implement best practices in .NET API development
 - Apply Clean Architecture principles
 - Explore advanced .NET and EF Core techniques
+
+## To do
+- Implement endpoints
+- Swagger
