@@ -79,7 +79,13 @@ namespace OrderManager.WebAPI.Controllers
         [HttpDelete("{orderID}")]
         public async Task<ActionResult> Delete(Guid orderID)
         {
-            await _ordersService.DeleteOrder(orderID);
+            var isDeleted = await _ordersService.DeleteOrder(orderID);
+
+            if (!isDeleted)
+            {
+                return NotFound();
+            }
+
             return NoContent();
         }
     }

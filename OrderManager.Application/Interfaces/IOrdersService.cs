@@ -33,7 +33,7 @@ namespace OrderManager.Application.Interfaces
         /// <summary>
         /// Get all orders
         /// </summary>
-        /// <returns>An list of all orders</returns>
+        /// <returns>A list of all orders</returns>
         public Task<List<OrderResponse>> GetAllOrders();
 
         /// <summary>

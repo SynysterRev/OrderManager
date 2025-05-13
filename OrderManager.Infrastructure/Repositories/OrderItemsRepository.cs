@@ -50,12 +50,12 @@ namespace OrderManager.Infrastructure.Repositories
 
         public async Task<OrderItem?> GetOrderItemByGuid(Guid orderItemID)
         {
-            return await _dbContext.OrderItems.Include("Order").FirstOrDefaultAsync(x => x.OrderID == orderItemID);
+            return await _dbContext.OrderItems.Include("Order").FirstOrDefaultAsync(x => x.OrderItemID == orderItemID);
         }
 
         public async Task<OrderItem> UpdateOrderItem(OrderItem orderItem)
         {
-            OrderItem? foundOrderItem = await _dbContext.OrderItems.FindAsync(orderItem.OrderID);
+            OrderItem? foundOrderItem = await _dbContext.OrderItems.FindAsync(orderItem.OrderItemID);
             if (foundOrderItem == null)
             {
                 return orderItem;
