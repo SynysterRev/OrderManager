@@ -7,7 +7,7 @@ A training project demonstrating a robust Order Management API built with .NET 8
 - RESTful API for managing Orders and Order Items
 - Clean Architecture implementation
 - Entity Framework Core for data persistence
-- Swagger documentation (in progress)
+- Swagger documentation
 
 ## Technologies
 - .NET 8.0
@@ -24,5 +24,3 @@ Project Under Development
 - Explore advanced .NET and EF Core techniques
 
 ## To do
-- Implement endpoints
-- Swagger
