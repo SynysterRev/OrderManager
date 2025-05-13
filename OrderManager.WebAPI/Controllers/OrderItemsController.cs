@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OrderManager.Application.DTO;
 using OrderManager.Application.Interfaces;
-using OrderManager.Application.Services;
-using OrderManager.Domain.Entities;
-using OrderManager.Domain.Repositories;
-using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
